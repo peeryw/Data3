@@ -39,10 +39,45 @@ extra credit for using GitHub
 */
 
 #include<iostream>
+#include<fstream>
+#include "Morse_Code.h"
+
 using namespace std;
 
 int main()
 {
+	ifstream finOpenTxt;
+	ofstream foutWriteTxt;
+	string x;
+
+	// 1. check file exists
+	try
+	{
+		finOpenTxt.open("checkin.txt");
+	}
+	catch (exception e)
+	{
+		cerr << "Unable to open file." << endl;
+		cout << "Unable to open txt file" << "\n" << "Program will now exit." << endl;
+		system("pause");
+		exit(0);
+	}
+	//		2. Read in data from files
+	while (!finOpenTxt.eof())//while there is data to read
+	{
+		finOpenTxt >> x;//read in file
+		try
+		{
+			//call Morse_Code to put into tree
+		}
+		catch (exception e)//
+		{
+			//what will we do if it fails
+		}
+		
+	}
+
+
 	system("pause");
 	return 0;
 }

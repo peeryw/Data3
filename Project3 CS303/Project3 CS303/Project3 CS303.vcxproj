@@ -147,6 +147,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Morse_Code.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\Project 3.pdf" />
