@@ -6,26 +6,31 @@ Morse_Code.cpp file
 
 Morse::Morse()
 {
-	root->Left->dotdash = '.';
-	root->Right->dotdash = '-';
+	root->Left = nullptr;
+	root->Right = nullptr;
 }
 
-string Morse::getLetter()
-{
-	return string();
-}
-
-string Morse::getCode()
-{
-	return string();
-}
-
-void Morse::setLetter()
-{
-
-}
-
-void Morse::setCode()
-{
+void Morse::makeLetter(char letter, string letterDotdash){
+	tree *currTree = root;
+	for (int i=0; i < letterDotdash.length(); i++){
+		if (letterDotdash[i]=='.'){
+			if (currTree -> Left == nullptr){
+				currTree -> Left = new tree;
+				currTree = currTree -> Left;
+			}
+			else {
+				currTree = currTree -> Left;
+			}
+		}
+		if (letterDotdash[i]=='-'){
+			if (currTree -> Right == nullptr){
+				currTree -> Right = new tree;
+				currTree = currTree -> Right;
+			}
+		else {
+				currTree = currTree -> Right;
+			}
+		}
+	}
 	
 }

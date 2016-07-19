@@ -60,10 +60,7 @@ class Morse {
 public:
 	Morse();
 	friend istream& operator>>(istream& input, tree& buildTree);
-	string getLetter();
-	string getCode();
-	void setLetter();
-	void setCode();
+	void makeLetter(char letter, string letterDotdash);
 
 private:
 	tree *root;
