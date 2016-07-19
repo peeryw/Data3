@@ -6,6 +6,8 @@ Morse_Code.cpp file
 
 Morse::Morse()
 {
+	root->Left->dotdash = '.';
+	root->Right->dotdash = '-';
 }
 
 string Morse::getLetter()
@@ -20,10 +22,10 @@ string Morse::getCode()
 
 void Morse::setLetter()
 {
-	return string();
+
 }
 
 void Morse::setCode()
 {
-	return string();
+	
 }

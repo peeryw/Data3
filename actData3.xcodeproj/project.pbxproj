@@ -1,0 +1,261 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		042C3DA51D3DD8A0006F0990 /* Morse_Code.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 042C3DA31D3DD8A0006F0990 /* Morse_Code.cpp */; };
+		042C3DA61D3DD8A0006F0990 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 042C3DA41D3DD8A0006F0990 /* Main.cpp */; };
+		0479F04F1D3DD948009AD761 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0479F0491D3DD948009AD761 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04E5DC031D3DD85100C4E926 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		042C3DA21D3DD8A0006F0990 /* Morse_Code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Morse_Code.h; path = "Project3 CS303/Project3 CS303/Morse_Code.h"; sourceTree = "<group>"; };
+		042C3DA31D3DD8A0006F0990 /* Morse_Code.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Morse_Code.cpp; path = "Project3 CS303/Project3 CS303/Morse_Code.cpp"; sourceTree = "<group>"; };
+		042C3DA41D3DD8A0006F0990 /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Main.cpp; path = "Project3 CS303/Project3 CS303/Main.cpp"; sourceTree = "<group>"; };
+		0479F0481D3DD948009AD761 /* StringTokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StringTokenizer.h; path = "Project3 CS303/Project3 CS303/StringTokenizer.h"; sourceTree = "<group>"; };
+		0479F0491D3DD948009AD761 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "Project3 CS303/Project3 CS303/README.md"; sourceTree = "<group>"; };
+		0479F04A1D3DD948009AD761 /* Project3 CS303.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Project3 CS303.vcxproj.filters"; path = "Project3 CS303/Project3 CS303/Project3 CS303.vcxproj.filters"; sourceTree = "<group>"; };
+		0479F04B1D3DD948009AD761 /* Project3 CS303.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Project3 CS303.vcxproj"; path = "Project3 CS303/Project3 CS303/Project3 CS303.vcxproj"; sourceTree = "<group>"; };
+		0479F04C1D3DD948009AD761 /* project_3_guidelines.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = project_3_guidelines.pdf; path = "Project3 CS303/Project3 CS303/project_3_guidelines.pdf"; sourceTree = "<group>"; };
+		0479F04D1D3DD948009AD761 /* Project 3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Project 3.pdf"; path = "Project3 CS303/Project3 CS303/Project 3.pdf"; sourceTree = "<group>"; };
+		0479F04E1D3DD948009AD761 /* morse.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = morse.txt; path = "Project3 CS303/Project3 CS303/morse.txt"; sourceTree = "<group>"; };
+		04E5DC051D3DD85100C4E926 /* actData3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = actData3; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04E5DC021D3DD85100C4E926 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04E5DBFC1D3DD85100C4E926 = {
+			isa = PBXGroup;
+			children = (
+				042C3DA21D3DD8A0006F0990 /* Morse_Code.h */,
+				042C3DA31D3DD8A0006F0990 /* Morse_Code.cpp */,
+				042C3DA41D3DD8A0006F0990 /* Main.cpp */,
+				0479F0481D3DD948009AD761 /* StringTokenizer.h */,
+				0479F0491D3DD948009AD761 /* README.md */,
+				0479F04A1D3DD948009AD761 /* Project3 CS303.vcxproj.filters */,
+				0479F04B1D3DD948009AD761 /* Project3 CS303.vcxproj */,
+				0479F04C1D3DD948009AD761 /* project_3_guidelines.pdf */,
+				0479F04D1D3DD948009AD761 /* Project 3.pdf */,
+				0479F04E1D3DD948009AD761 /* morse.txt */,
+				04E5DC061D3DD85100C4E926 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04E5DC061D3DD85100C4E926 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04E5DC051D3DD85100C4E926 /* actData3 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04E5DC041D3DD85100C4E926 /* actData3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04E5DC0C1D3DD85100C4E926 /* Build configuration list for PBXNativeTarget "actData3" */;
+			buildPhases = (
+				04E5DC011D3DD85100C4E926 /* Sources */,
+				04E5DC021D3DD85100C4E926 /* Frameworks */,
+				04E5DC031D3DD85100C4E926 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = actData3;
+			productName = actData3;
+			productReference = 04E5DC051D3DD85100C4E926 /* actData3 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04E5DBFD1D3DD85100C4E926 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = JohnGoza;
+				TargetAttributes = {
+					04E5DC041D3DD85100C4E926 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 04E5DC001D3DD85100C4E926 /* Build configuration list for PBXProject "actData3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 04E5DBFC1D3DD85100C4E926;
+			productRefGroup = 04E5DC061D3DD85100C4E926 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04E5DC041D3DD85100C4E926 /* actData3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04E5DC011D3DD85100C4E926 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0479F04F1D3DD948009AD761 /* README.md in Sources */,
+				042C3DA51D3DD8A0006F0990 /* Morse_Code.cpp in Sources */,
+				042C3DA61D3DD8A0006F0990 /* Main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		04E5DC0A1D3DD85100C4E926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		04E5DC0B1D3DD85100C4E926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		04E5DC0D1D3DD85100C4E926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04E5DC0E1D3DD85100C4E926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04E5DC001D3DD85100C4E926 /* Build configuration list for PBXProject "actData3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E5DC0A1D3DD85100C4E926 /* Debug */,
+				04E5DC0B1D3DD85100C4E926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04E5DC0C1D3DD85100C4E926 /* Build configuration list for PBXNativeTarget "actData3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E5DC0D1D3DD85100C4E926 /* Debug */,
+				04E5DC0E1D3DD85100C4E926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04E5DBFD1D3DD85100C4E926 /* Project object */;
+}
