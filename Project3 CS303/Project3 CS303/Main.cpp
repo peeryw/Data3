@@ -40,20 +40,21 @@ extra credit for using GitHub
 
 #include<iostream>
 #include<fstream>
+#include<string>
 #include "Morse_Code.h"
 
 using namespace std;
 
 int main()
 {
-	ifstream finOpenTxt;
-	ofstream foutWriteTxt;
-	string x;
+	ifstream fin;
+	ofstream fout;
+	string letter, delim, code;
 
 	// 1. check file exists
 	try
 	{
-		finOpenTxt.open("checkin.txt");
+		fin.open("morse.txt");
 	}
 	catch (exception e)
 	{
@@ -63,9 +64,9 @@ int main()
 		exit(0);
 	}
 	//		2. Read in data from files
-	while (!finOpenTxt.eof())//while there is data to read
+	while (!fin.eof())//while there is data to read
 	{
-		finOpenTxt >> x;//read in file
+		//getline(fin);
 		try
 		{
 			//call Morse_Code to put into tree

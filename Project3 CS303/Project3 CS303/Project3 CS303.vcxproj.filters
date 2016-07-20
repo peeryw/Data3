@@ -21,6 +21,9 @@
     <ClCompile Include="Morse_Code.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="practice temp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\Project 3.pdf">
@@ -37,5 +40,25 @@
     <ClInclude Include="Morse_Code.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Binary_Search_Tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Binary_Tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BTNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="String_Tokenizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="practice temp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="morse.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

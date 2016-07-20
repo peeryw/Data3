@@ -56,10 +56,15 @@ struct tree {
 	tree *Left, *Right;
 };
 
+enum Coding {
+	dot = '.', dash = '_', zero = '0', one = '1'
+};
+
 class Morse {
 public:
 	Morse();
-	friend istream& operator>>(istream& input, tree& buildTree);
+	friend ostream& getline(istream&, string&);
+	friend istream& operator>>(istream& in, string& value);
 	string getLetter();
 	string getCode();
 	void setLetter();

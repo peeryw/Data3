@@ -29,3 +29,18 @@ void Morse::setCode()
 {
 	
 }
+
+ostream & getline(istream& in, string& value)
+{
+	// TODO: insert return statement here
+	getline(in, value);
+	return in;
+}
+
+istream & operator >> (istream & in, string& value)
+{
+	in >> value;
+	return in;
+
+	// TODO: insert return statement here
+}
