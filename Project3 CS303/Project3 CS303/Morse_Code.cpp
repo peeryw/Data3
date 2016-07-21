@@ -6,14 +6,14 @@ Morse_Code.cpp file
 
 Morse::Morse()
 {
-	root.letter = '~';
-	root.dotdash = '';
+	root.letter = "~";
+	root.dotdash = "";
 	root.Left = nullptr;
 	root.Right = nullptr;
 
 }
 
-void Morse::makeLetter(char tempLetter, string letterDotdash){
+void Morse::makeLetter(string tempLetter, string letterDotdash){
 	tree currTree = root;
 	for (int i=0; i < letterDotdash.length(); i++){
 		if (letterDotdash[i]=='.'){
@@ -26,17 +26,17 @@ void Morse::makeLetter(char tempLetter, string letterDotdash){
 			}
 		}
 		if (letterDotdash[i]=='-'){
-			if (currTree -> Right == nullptr){
-				currTree -> Right = new tree;
-				currTree = currTree -> Right;
+			if (currTree.Right == nullptr){
+				currTree.Right = new tree;
+				currTree = *currTree.Right;
 			}
 		else {
-				currTree = currTree -> Right;
+				currTree = *currTree.Right;
 			}
 		}
 	}
-	currTree->dotdash=letterDotdash;
-	currTree->letter=tempLetter;
+	currTree.dotdash=letterDotdash;
+	currTree.letter=tempLetter;
 }
 
 void Morse::setLetter(string letter, string code)
