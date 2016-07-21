@@ -42,6 +42,7 @@ extra credit for using GitHub
 #include<fstream>
 #include<string>
 #include "Morse_Code.h"
+#include "Binary_Tree.h"
 
 using namespace std;
 
@@ -50,6 +51,7 @@ int main()
 	ifstream fin;
 	ofstream fout;
 	string letter, delim, code, value;
+	Morse MorseCode;
 
 
 	// 1. check file exists
@@ -81,6 +83,7 @@ int main()
 					code += *it;
 				}
 			}
+			MorseCode.setLetter()
 		}
 
 
