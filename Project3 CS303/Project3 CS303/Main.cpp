@@ -68,24 +68,26 @@ int main()
 	char tempChar; string tempString;
 	while (!fin.eof())//while there is data to read
 	{
+		fin >> value;
+		//cout <<value<< endl;
 
-		try
-		{
-
-
-			fin.get(tempChar);
-			getline(fin,tempString);
-			treeBuilder.makeLetter(tempChar, tempString);
-			cout << tempString;
-			
+		string::iterator it;
+		int index = 0;
+		for (it = value.begin(); it < value.end(); ++it, ++index) {
+			if (isalnum(*it)) {
+				letter = *it;
+			}
+			if (index != 0 && index <= 4) {
+				if (!isalnum(*it)) {
+					code += *it;
+				}
+			}
+			MorseCode.setLetter()
 		}
-		catch (exception e)//
-		{
-			
-			throw 9;
-			
-		}
-		
+
+
+		cout << letter << " " << code << endl;
+		code = "";
 	}
 
 	system("pause");

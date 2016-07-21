@@ -59,6 +59,12 @@ struct tree {
 class Morse {
 public:
 	Morse();
+	//friend ostream& getline(istream&, string&);
+	//friend istream& operator>>(istream& in, string& value);
+	string getLetter();
+	string getCode();
+	void setLetter(string letter, string code);//inserts letter based on code value
+	void setCode();//not sure what to do with this yet
 	friend istream& operator>>(istream& input, tree& buildTree);
 	void makeLetter(char letter, string letterDotdash);
 
