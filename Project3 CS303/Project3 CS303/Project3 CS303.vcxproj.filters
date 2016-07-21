@@ -57,7 +57,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="morse.txt">
+    <Text Include="morse1.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>

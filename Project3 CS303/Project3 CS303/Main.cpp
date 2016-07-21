@@ -49,7 +49,8 @@ int main()
 {
 	ifstream fin;
 	ofstream fout;
-	string letter, delim, code;
+	string letter, delim, code, value;
+
 
 	// 1. check file exists
 	try
@@ -66,7 +67,25 @@ int main()
 	//		2. Read in data from files
 	while (!fin.eof())//while there is data to read
 	{
-		//getline(fin);
+		fin >> value;
+		//cout <<value<< endl;
+
+		string::iterator it;
+		int index = 0;
+		for (it = value.begin(); it < value.end(); ++it, ++index) {
+			if (isalnum(*it)) {
+				letter = *it;
+			}
+			if (index != 0 && index <= 4) {
+				if (!isalnum(*it)) {
+					code += *it;
+				}
+			}
+		}
+
+
+		cout << letter << " " << code << endl;
+	}
 		try
 		{
 			//call Morse_Code to put into tree
@@ -75,9 +94,6 @@ int main()
 		{
 			//what will we do if it fails
 		}
-		
-	}
-
 
 	system("pause");
 	return 0;
