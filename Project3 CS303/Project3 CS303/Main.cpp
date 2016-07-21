@@ -85,6 +85,7 @@ int main()
 
 
 		cout << letter << " " << code << endl;
+		code = "";
 	}
 		try
 		{
