@@ -46,14 +46,15 @@ using namespace std;
 
 int main()
 {
-	ifstream finOpenTxt;
-	ofstream foutWriteTxt;
+	ifstream fin;
+	ofstream fout;
 	string x;
+	Morse treeBuilder;
 
 	// 1. check file exists
 	try
 	{
-		finOpenTxt.open("checkin.txt");
+		fin.open("morse.txt");
 	}
 	catch (exception e)
 	{
@@ -63,20 +64,29 @@ int main()
 		exit(0);
 	}
 	//		2. Read in data from files
-	while (!finOpenTxt.eof())//while there is data to read
+	
+	char tempChar; string tempString;
+	while (!fin.eof())//while there is data to read
 	{
-		finOpenTxt >> x;//read in file
+
 		try
 		{
-			//call Morse_Code to put into tree
+
+
+			fin.get(tempChar);
+			getline(fin,tempString);
+			treeBuilder.makeLetter(tempChar, tempString);
+			cout << tempString;
+			
 		}
 		catch (exception e)//
 		{
-			//what will we do if it fails
+			
+			throw 9;
+			
 		}
 		
 	}
-
 
 	system("pause");
 	return 0;

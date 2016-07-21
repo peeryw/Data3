@@ -52,7 +52,7 @@ using namespace std;
 struct tree {
 	tree() { Left = nullptr; Right = nullptr; }
 	char letter;
-	char dotdash;
+	string dotdash;
 	tree *Left, *Right;
 };
 
@@ -63,7 +63,7 @@ public:
 	void makeLetter(char letter, string letterDotdash);
 
 private:
-	tree *root;
+	tree root;
 };
 
 
