@@ -11,7 +11,20 @@ Morse::Morse()
 	root->dotdash = "";
 	root->Left = nullptr;
 	root->Right = nullptr;
+}
 
+string Morse::decode()
+{
+	//search tree to locate letter by changing . and - to
+	//0 and 1 to properly search tree
+	return string();
+}
+
+string Morse::encode()
+{
+	//travers tree to find depth of letter to return code
+	//by converting 0 and 1 to . and -
+	return string();
 }
 
 void Morse::makeLetter(string tempLetter, string letterDotdash){
@@ -40,30 +53,3 @@ void Morse::makeLetter(string tempLetter, string letterDotdash){
 	(*currTree)->dotdash=letterDotdash;
 	(*currTree)->letter=tempLetter;
 }
-
-void Morse::setLetter(string letter, string code)
-{
-	//translate code into depth of letter from main root
-	//travers tree till it gets to node at that depth
-	//insert letter as the data for that node
-	//if nodes allong the way of traversal do not exist
-	//   then create the nodes and leave data as empty
-}
-
-void Morse::setCode()
-{
-	
-}
-
-//ostream & getline(istream& in, string& value)
-//{
-//	// TODO: insert return statement here
-//	/*getline(in, value);
-//	return in;*/
-//}
-//
-//istream & operator >> (istream & fin, string& value)
-//{
-//	
-//	// TODO: insert return statement here
-//}

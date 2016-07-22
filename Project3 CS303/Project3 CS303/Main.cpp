@@ -44,12 +44,11 @@ extra credit for using GitHub
 
 using namespace std;
 
-int main()
+void main()
 {
 	ifstream fin;
 	ofstream fout;
-	string x;
-	string letter, delim, code, value;
+	string letter, code, value;
 	Morse MorseCode;
 
 	// 1. check file exists
@@ -64,34 +63,28 @@ int main()
 		system("pause");
 		exit(0);
 	}
-	//		2. Read in data from files
-	
-	char tempChar; string tempString;
+
+	//2. Read in data from files
 	while (!fin.eof())//while there is data to read
 	{
 		fin >> value;
-		//cout <<value<< endl;
 
 		string::iterator it;
 		int index = 0;
 		for (it = value.begin(); it < value.end(); ++it, ++index) {
-			if (isalnum(*it)) {
+			if (isalnum(*it)) {//determine if is a letter value
 				letter = *it;
 			}
 			if (index != 0 && index <= 4) {
-				if (!isalnum(*it)) {
+				if (!isalnum(*it)) {//get the rest of the info from the line
 					code += *it;
 				}
 			}
-
 		}
-
-
-		cout << letter << " " << code << endl;
+		//cout << letter << " " << code << endl;//used to test
 		MorseCode.makeLetter(letter, code);
 		code = "";
 	}
 
 	system("pause");
-	return 0;
 }
