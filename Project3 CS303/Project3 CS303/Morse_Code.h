@@ -23,6 +23,7 @@ the assumtion is that each line will be a single string of either a single chara
 #include<iostream>
 #include<fstream>
 #include<string>
+#include<map>
 
 using namespace std;
 
@@ -36,12 +37,15 @@ struct tree {
 class Morse {
 public:
 	Morse();
-	string decode();//iterate through tree to get letter of the code
-	string encode();//iterate through tree to get code of the letter
-	void makeLetter(string letter, string letterDotdash);
+	string decode(string input); //maps are o(n) and not a pain
+	string encode(string input); //letter to dash dot
+	void makeLetter(string letter, string letterDotdash); // also populates maps
 
 private:
 	tree *root;
+	bool treeMade;
+	map<string,string> asciiToDot; // For encode function
+	map<string,string> dotToAscii; // For decode function
 };
 
 #endif /* Morse_Code.hpp */

@@ -86,7 +86,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project3 CS303/Project3 CS303/Morse_Code.cpp"
@@ -102,11 +102,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project3 CS303/Project3 CS303/Morse_Code.cpp"
-            timestampString = "490841946.247497"
+            timestampString = "490853887.351101"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
@@ -126,13 +126,15 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
-            endingLineNumber = "16">
+            endingLineNumber = "16"
+            landmarkName = "Morse::decode(string dotToAscii)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project3 CS303/Project3 CS303/Morse_Code.cpp"
@@ -141,14 +143,14 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
             endingLineNumber = "17"
-            landmarkName = "Morse::makeLetter(string tempLetter, string letterDotdash)"
+            landmarkName = "Morse::decode(string dotToAscii)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project3 CS303/Project3 CS303/Morse_Code.cpp"
@@ -159,38 +161,6 @@
             endingLineNumber = "7"
             landmarkName = "Morse::Morse()"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Morse::Morse()"
-                  moduleName = "actData3"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jack/Desktop/actData3/Project3%20CS303/Project3%20CS303/Morse_Code.cpp"
-                  timestampString = "490842236.19172"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "9"
-                  endingLineNumber = "9"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Morse::Morse()"
-                  moduleName = "actData3"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jack/Desktop/actData3/Project3%20CS303/Project3%20CS303/Morse_Code.cpp"
-                  timestampString = "490842236.191866"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "8"
-                  endingLineNumber = "8"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -205,7 +175,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
             endingLineNumber = "21"
-            landmarkName = "Morse::makeLetter(string tempLetter, string letterDotdash)"
+            landmarkName = "Morse::decode(string dotToAscii)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
