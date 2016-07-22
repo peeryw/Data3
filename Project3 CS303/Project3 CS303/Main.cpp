@@ -49,7 +49,8 @@ int main()
 	ifstream fin;
 	ofstream fout;
 	string x;
-	Morse treeBuilder;
+	string letter, delim, code, value;
+	Morse MorseCode;
 
 	// 1. check file exists
 	try
@@ -82,11 +83,12 @@ int main()
 					code += *it;
 				}
 			}
-			MorseCode.setLetter()
+
 		}
 
 
 		cout << letter << " " << code << endl;
+		MorseCode.makeLetter(letter, code);
 		code = "";
 	}
 
