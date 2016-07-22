@@ -69,7 +69,7 @@ public:
 	void makeLetter(string letter, string letterDotdash);
 
 private:
-	tree root;
+	tree *root;
 };
 
 
