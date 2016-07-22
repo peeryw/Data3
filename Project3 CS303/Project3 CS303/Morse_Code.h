@@ -17,13 +17,12 @@ the assumtion is that each line will be a single string of either a single chara
 
 */
 
-
 #ifndef Morse_Code
 #define Morse_Code
 
 #include<iostream>
+#include<fstream>
 #include<string>
-
 
 using namespace std;
 
@@ -37,21 +36,13 @@ struct tree {
 class Morse {
 public:
 	Morse();
-	//friend ostream& getline(istream&, string&);
-	//friend istream& operator>>(istream& in, string& value);
-	string getLetter();
-	string getCode();
-	void setLetter(string letter, string code); //inserts letter based on code value
-	void setCode();//not sure what to do with this yet
-	friend istream& operator>>(istream& input, tree& buildTree);
+	string decode();//iterate through tree to get letter of the code
+	string encode();//iterate through tree to get code of the letter
 	void makeLetter(string letter, string letterDotdash);
 
 private:
 	tree *root;
 };
-
-
-
 
 #endif /* Morse_Code.hpp */
 
