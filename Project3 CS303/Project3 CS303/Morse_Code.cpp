@@ -15,9 +15,9 @@ Morse::Morse()
 }
 
 void Morse::makeLetter(string tempLetter, string letterDotdash){
-	tree **currTree = &root;
+	tree **currTree = &root;	// Pointer to a pointer to root
 	for (int i=0; i <= letterDotdash.length(); i++){
-		if (letterDotdash[i]=='.'){
+		if (letterDotdash[i]=='.'){ // dot = Navigate left
 			if ((*currTree)->Left == nullptr){
 				(*currTree)->Left = new tree;
 				currTree = &((*currTree)->Left);
@@ -26,7 +26,7 @@ void Morse::makeLetter(string tempLetter, string letterDotdash){
 				currTree = &((*currTree)->Left);
 			}
 		}
-		if (letterDotdash[i]=='-' || letterDotdash[i]=='_'){
+		if (letterDotdash[i]=='-' || letterDotdash[i]=='_'){ // dash = navigate right
 			if ((*currTree)->Right == nullptr){
 				(*currTree)->Right = new tree;
 				currTree = &((*currTree)->Right);
