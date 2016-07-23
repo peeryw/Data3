@@ -1,2 +1,5 @@
-﻿  Main.cpp
+﻿  Morse_Code.cpp
+c:\users\willi\desktop\cs303\projects\project3 solution folder\project3 cs303\project3 cs303\morse_code.cpp(43): warning C4018: '<=': signed/unsigned mismatch
+  Main.cpp
+  Generating Code...
   Project3 CS303.vcxproj -> C:\Users\willi\Desktop\CS303\projects\Project3 solution folder\Project3 CS303\Debug\Project3 CS303.exe

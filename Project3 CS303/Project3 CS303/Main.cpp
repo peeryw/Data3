@@ -86,6 +86,13 @@ int main()
 		code = "";
 	}
 
+	string decoded = MorseCode.decode("._");
+	cout << decoded << endl;
+
+	string encoded = MorseCode.encode("a");
+	cout << encoded << endl;
+
+
 	system("pause");
 	return 0;
 }

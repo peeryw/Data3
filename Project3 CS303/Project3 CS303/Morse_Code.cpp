@@ -14,20 +14,26 @@ Morse::Morse()
 	root->Right = nullptr;
 }
 
-string Morse::decode(string dotToAscii)
+string Morse::decode(const string& code)
 {
-	// TODO: Use maps and make this work
-	//search tree to locate letter by changing . and - to
-	//0 and 1 to properly search tree
-	return string();
+	map<string, string>::const_iterator it= dotToAscii.find(code);
+	if (it != dotToAscii.end())
+	{
+		return it->second;
+	}
+	else
+		return "";
 }
 
-string Morse::encode(string asciiToDot)
+string Morse::encode(const string& letter)
 {
-	// TODO: Use maps and make this work
-	//travers tree to find depth of letter to return code
-	//by converting 0 and 1 to . and -
-	return string();
+	map<string, string>::const_iterator it = asciiToDot.find(letter);
+	if (it != asciiToDot.end())
+	{
+		return it->second;
+	}
+	else
+		return "";
 }
 
 void Morse::makeLetter(string tempLetter, string letterDotdash){

@@ -37,8 +37,8 @@ struct tree {
 class Morse {
 public:
 	Morse();
-	string decode(string input); //maps are o(n) and not a pain
-	string encode(string input); //letter to dash dot
+	string decode(const string& code); //maps are o(n) and not a pain
+	string encode(const string& letter); //letter to dash dot
 	void makeLetter(string letter, string letterDotdash); // also populates maps
 
 private:
