@@ -16,3 +16,10 @@ Morse_Code file additions/deletions
 Main file additions and deletions
 -change main from int to void
 -cleanded up and removed unused variables
+
+
+Jack's adventure notes:
+
+-Only thing left is encode/decode which is STUPID easy using maps.
+-Upon reflection the binary node creation wasn't that hard a problem, and I most likely overcelebrated
+-With that said... suck it!

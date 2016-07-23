@@ -44,7 +44,7 @@ extra credit for using GitHub
 
 using namespace std;
 
-void main()
+int main()
 {
 	ifstream fin;
 	ofstream fout;
