@@ -23,13 +23,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\Project 3.pdf">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="..\..\project_3_guidelines.pdf">
-      <Filter>Resource Files</Filter>
-    </None>
     <None Include="README.md">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Project 3.pdf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="project_3_guidelines.pdf">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
