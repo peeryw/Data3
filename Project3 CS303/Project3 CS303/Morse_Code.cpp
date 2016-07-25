@@ -49,12 +49,12 @@ string Morse::decode(const string & code, string DECODED)
 	Morse TempLetter;
 	for (int i = 0; i < code.length(); i++) {
 		TempString += code[i];
-		while(!code.end()){ }
-		if (TempString == ".")
-			DECODED += TempString;
-		if (TempString == "_")
-			DECODED += TempString;
-
+		if (TempString != " ") {
+			if (TempString == ".")
+				DECODED += TempString;
+			if (TempString == "_")
+				DECODED += TempString;
+		}
 		DECODED += TempLetter.getLetter(TempString);
 			
 		}
