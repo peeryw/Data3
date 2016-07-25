@@ -15,6 +15,7 @@ Morse::Morse()
 }
 
 string Morse::getLetter(const string& code)
+//read in code, search through map to find key(code) and return letter
 {
 	map<string, string>::const_iterator it= dotToAscii.find(code);
 	if (it != dotToAscii.end())
@@ -26,6 +27,7 @@ string Morse::getLetter(const string& code)
 }
 
 string Morse::getCode(const string& letter)
+//read in letter, search through map to find key(letter) and return code
 {
 	map<string, string>::const_iterator it = asciiToDot.find(letter);
 	if (it != asciiToDot.end())
