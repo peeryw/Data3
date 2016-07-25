@@ -51,7 +51,7 @@ string Morse::decode(const string & code, string DECODED)
 		while(code!=" "){
 		TempString += code[i];
 		}
-		TempLetter.getLetter(TempString);
+		DECODED += TempLetter.getLetter(TempString);
 		TempString = "";
 	}
 	return string(DECODED);
