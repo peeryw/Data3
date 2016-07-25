@@ -14,7 +14,7 @@ Morse::Morse()
 	root->Right = nullptr;
 }
 
-string Morse::decode(const string& code)
+string Morse::getLetter(const string& code)
 {
 	map<string, string>::const_iterator it= dotToAscii.find(code);
 	if (it != dotToAscii.end())
@@ -25,7 +25,7 @@ string Morse::decode(const string& code)
 		return "";
 }
 
-string Morse::encode(const string& letter)
+string Morse::getCode(const string& letter)
 {
 	map<string, string>::const_iterator it = asciiToDot.find(letter);
 	if (it != asciiToDot.end())
@@ -34,6 +34,28 @@ string Morse::encode(const string& letter)
 	}
 	else
 		return "";
+}
+
+string Morse::decode(const string & code, string DECODED)
+{
+	//read in string
+	//step through string one character at a time, the delim will be a space
+	//send first character to getLetter
+	// returned character will be added to new string
+	//repeat step 3 and 4 untill string is empty
+	return string(DECODED);
+}
+
+string Morse::encode(const string & letter, string ENCODED)
+{
+	//read in string
+	//step through one character at a time
+	//characters will only be letters, string in will be single word only
+	//send first character to getCode
+	//returned code character will be added to new string
+	//space needs to be added to new string after each character return
+	//repeat until string is empty
+	return string(ENCODED);
 }
 
 void Morse::makeLetter(string tempLetter, string letterDotdash){

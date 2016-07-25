@@ -1,5 +1,9 @@
 ﻿  Morse_Code.cpp
-c:\users\willi\desktop\cs303\projects\project3 solution folder\project3 cs303\project3 cs303\morse_code.cpp(43): warning C4018: '<=': signed/unsigned mismatch
+c:\users\willi\desktop\cs303\projects\project3 solution folder\project3 cs303\project3 cs303\morse_code.cpp(32): warning C4018: '<': signed/unsigned mismatch
+c:\users\willi\desktop\cs303\projects\project3 solution folder\project3 cs303\project3 cs303\morse_code.cpp(60): warning C4018: '<=': signed/unsigned mismatch
+  Generating Code...
+c:\users\willi\desktop\cs303\projects\project3 solution folder\project3 cs303\project3 cs303\morse_code.cpp(54): warning C4715: 'Morse::encode': not all control paths return a value
+  Compiling...
   Main.cpp
   Generating Code...
   Project3 CS303.vcxproj -> C:\Users\willi\Desktop\CS303\projects\Project3 solution folder\Project3 CS303\Debug\Project3 CS303.exe
