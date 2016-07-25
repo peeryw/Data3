@@ -47,7 +47,13 @@ string Morse::decode(const string & code, string DECODED)
 	//repeat step 3 and 4 untill string is empty
 	string TempString;
 	Morse TempLetter;
-	//need to read up to delim, then pass it to getletter
+	for (int i = 0; i < code.length(); i++) {
+		while(code!=" "){
+		TempString += code[i];
+		}
+		TempLetter.getLetter(TempString);
+		TempString = "";
+	}
 	return string(DECODED);
 }
 
