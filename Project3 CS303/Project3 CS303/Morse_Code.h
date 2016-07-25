@@ -42,8 +42,8 @@ public:
 	Morse();
 	string getLetter(const string & code); //returns letter value of code
 	string getCode(const string & letter); //returns code value of letter
-	string decode(const string& code, string DECODED); //dot dash to letter
-	string encode(const string& letter, string ENCODED); //letter to dash dot
+	string decode(string code); //dot dash to letter
+	string encode(string letter); //letter to dash dot
 	void makeLetter(string letter, string letterDotdash); // also populates maps
 
 private:

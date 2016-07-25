@@ -92,11 +92,11 @@ int main()
 	string encoded = MorseCode.getCode("a");
 	cout << encoded << endl;
 
-	 string decodedLong = MorseCode.decode("._ .___", value);
+	string decodedLong = MorseCode.decode("._ .___");
 	cout << decodedLong << endl;
 
-	//string encodedLong = MorseCode.encode("hello", temp);
-	//cout << encodedLong << endl;
+	string encodedLong = MorseCode.encode("hello");
+	cout << encodedLong << endl;
 
 	system("pause");
 	return 0;

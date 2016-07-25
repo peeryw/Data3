@@ -38,32 +38,32 @@ string Morse::getCode(const string& letter)
 		return "";
 }
 
-string Morse::decode(const string & code, string DECODED)
-{	//read in string
-	//step through string one "character" at a time, the delim will be a space
-	//send first character to getLetter
-	// returned character will be added to new string
-	//repeat step 3 and 4 untill string is empty
-	
+//read in string
+//step through string one "character" at a time, the delim will be a space
+//send first character to getLetter
+// returned character will be added to new string
+//repeat step 3 and 4 untill string is empty
+string Morse::decode(string code)
+{	
 	string TempString;
 	Morse TempLetter;
-	for (int i = 0; i < code.length(); i++) {
-		TempString += code[i];
-		if (TempString != " ") {
-			if (TempString == ".")
-				DECODED += TempString;
-			if (TempString == "_")
-				DECODED += TempString;
+	string DECODED;
+	TempString = code.substr(0, code.find(" "));
+	while (!code.empty()) {
+		map<string, string>::const_iterator it = dotToAscii.find(TempString);
+		if (it != dotToAscii.end())
+		{
+			DECODED += it->second;
+			TempString = (code.substr(code.find(" ") + 1));
 		}
-		DECODED += TempLetter.getLetter(TempString);
-			
-		}
-		DECODED += DECODED;
-	
+		else
+			return "";
+
+	}
 	return string(DECODED);
 }
 
-string Morse::encode(const string & letter, string ENCODED)
+string Morse::encode( string  letter)
 {
 	//read in string
 	//step through one character at a time
@@ -73,6 +73,7 @@ string Morse::encode(const string & letter, string ENCODED)
 	//space needs to be added to new string after each character return
 	//repeat until string is empty
 	string TempString;
+	string ENCODED;
 	Morse TempCode;
 	for (int i = 0; i < letter.length(); i++)
 	{
@@ -85,9 +86,6 @@ string Morse::encode(const string & letter, string ENCODED)
 		}
 		else
 			return "";
-
-		//ENCODED += TempCode.getCode(TempString);
-		//ENCODED += " ";
 	}
 	return string(ENCODED);
 }

@@ -1,5 +1,7 @@
-﻿  Morse_Code.cpp
-c:\users\willi\desktop\cs303\projects\project3 solution folder\project3 cs303\project3 cs303\morse_code.cpp(50): warning C4018: '<': signed/unsigned mismatch
-c:\users\willi\desktop\cs303\projects\project3 solution folder\project3 cs303\project3 cs303\morse_code.cpp(77): warning C4018: '<': signed/unsigned mismatch
-c:\users\willi\desktop\cs303\projects\project3 solution folder\project3 cs303\project3 cs303\morse_code.cpp(99): warning C4018: '<=': signed/unsigned mismatch
-  Project3 CS303.vcxproj -> C:\Users\willi\Desktop\CS303\projects\Project3 solution folder\Project3 CS303\Debug\Project3 CS303.exe
+﻿  String_Tokenizer.cpp
+  Morse_Code.cpp
+c:\users\willi\desktop\cs303\projects\project3 solution folder\project3 cs303\project3 cs303\morse_code.cpp(57): error C2676: binary '||': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' does not define this operator or a conversion to a type acceptable to the predefined operator
+c:\users\willi\desktop\cs303\projects\project3 solution folder\project3 cs303\project3 cs303\morse_code.cpp(79): warning C4018: '<': signed/unsigned mismatch
+c:\users\willi\desktop\cs303\projects\project3 solution folder\project3 cs303\project3 cs303\morse_code.cpp(98): warning C4018: '<=': signed/unsigned mismatch
+  Main.cpp
+  Generating Code...
