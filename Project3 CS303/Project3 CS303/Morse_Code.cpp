@@ -45,6 +45,7 @@ string Morse::decode(const string & code, string DECODED)
 	//send first character to getLetter
 	// returned character will be added to new string
 	//repeat step 3 and 4 untill string is empty
+	
 	string TempString;
 	Morse TempLetter;
 	for (int i = 0; i < code.length(); i++) {
@@ -68,11 +69,20 @@ string Morse::encode(const string & letter, string ENCODED)
 	//repeat until string is empty
 	string TempString;
 	Morse TempCode;
-	for (int i = 0; i < letter.length; i++)
+	for (int i = 0; i < letter.length(); i++)
 	{
 		TempString = letter[i];
-		ENCODED += TempCode.getCode(TempString);
-		ENCODED += " ";
+		map<string, string>::const_iterator it = asciiToDot.find(TempString);
+		if (it != asciiToDot.end())
+		{
+			 ENCODED += it->second;
+			 ENCODED += " ";
+		}
+		else
+			return "";
+
+		//ENCODED += TempCode.getCode(TempString);
+		//ENCODED += " ";
 	}
 	return string(ENCODED);
 }
