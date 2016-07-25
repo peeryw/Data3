@@ -39,8 +39,7 @@ string Morse::getCode(const string& letter)
 }
 
 string Morse::decode(const string & code, string DECODED)
-{
-	//read in string
+{	//read in string
 	//step through string one "character" at a time, the delim will be a space
 	//send first character to getLetter
 	// returned character will be added to new string
@@ -49,12 +48,18 @@ string Morse::decode(const string & code, string DECODED)
 	string TempString;
 	Morse TempLetter;
 	for (int i = 0; i < code.length(); i++) {
-		while(code!=" "){
 		TempString += code[i];
-		}
+		while(!code.end()){ }
+		if (TempString == ".")
+			DECODED += TempString;
+		if (TempString == "_")
+			DECODED += TempString;
+
 		DECODED += TempLetter.getLetter(TempString);
-		TempString = "";
-	}
+			
+		}
+		DECODED += DECODED;
+	
 	return string(DECODED);
 }
 
