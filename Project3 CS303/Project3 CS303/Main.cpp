@@ -88,8 +88,8 @@ int main()
 	
 	//currently test strings
 	//change the string to test for different outcomes
-	cout << MorseCode.decode(".... . ._.. .__. .. __ _ ._. ._ .__. .__. . _.. .. _. ._ _._. ___ __ .__. .._ _ . ._.") << endl;
-	cout << MorseCode.encode("hillaryriggedtheprimary") << endl;
+	cout << MorseCode.decode(".... .. ._.. ._.. ._ ._. _.__ ._. .. __. __. . _.. _ .... . .__. ._. .. __ ._ ._. _.__ ") << endl;
+	cout << MorseCode.encode("helpimtrappedinacomputer") << endl;
 
 	system("pause");
 	return 0;

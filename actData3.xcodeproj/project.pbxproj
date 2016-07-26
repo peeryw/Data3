@@ -28,7 +28,6 @@
 		042C3DA21D3DD8A0006F0990 /* Morse_Code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Morse_Code.h; path = "Project3 CS303/Project3 CS303/Morse_Code.h"; sourceTree = "<group>"; };
 		042C3DA31D3DD8A0006F0990 /* Morse_Code.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Morse_Code.cpp; path = "Project3 CS303/Project3 CS303/Morse_Code.cpp"; sourceTree = "<group>"; };
 		042C3DA41D3DD8A0006F0990 /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Main.cpp; path = "Project3 CS303/Project3 CS303/Main.cpp"; sourceTree = "<group>"; };
-		0479F0481D3DD948009AD761 /* StringTokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StringTokenizer.h; path = "Project3 CS303/Project3 CS303/StringTokenizer.h"; sourceTree = "<group>"; };
 		0479F0491D3DD948009AD761 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "Project3 CS303/Project3 CS303/README.md"; sourceTree = "<group>"; };
 		0479F04A1D3DD948009AD761 /* Project3 CS303.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Project3 CS303.vcxproj.filters"; path = "Project3 CS303/Project3 CS303/Project3 CS303.vcxproj.filters"; sourceTree = "<group>"; };
 		0479F04B1D3DD948009AD761 /* Project3 CS303.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Project3 CS303.vcxproj"; path = "Project3 CS303/Project3 CS303/Project3 CS303.vcxproj"; sourceTree = "<group>"; };
@@ -55,7 +54,6 @@
 				042C3DA21D3DD8A0006F0990 /* Morse_Code.h */,
 				042C3DA31D3DD8A0006F0990 /* Morse_Code.cpp */,
 				042C3DA41D3DD8A0006F0990 /* Main.cpp */,
-				0479F0481D3DD948009AD761 /* StringTokenizer.h */,
 				0479F0491D3DD948009AD761 /* README.md */,
 				0479F04A1D3DD948009AD761 /* Project3 CS303.vcxproj.filters */,
 				0479F04B1D3DD948009AD761 /* Project3 CS303.vcxproj */,
