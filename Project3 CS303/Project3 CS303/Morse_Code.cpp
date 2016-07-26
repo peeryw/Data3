@@ -81,7 +81,7 @@ string Morse_Code::encode(string  letter)
 	return string(ENCODED);
 }
 
-void Morse_Code::makeLetter(char tempLetter, string letterDotdash){
+void Morse_Code::makeTree(char tempLetter, string letterDotdash){
 	asciiToDot[tempLetter] = letterDotdash; // populate maps
 	dotToAscii[letterDotdash] = tempLetter;
 	tree **currTree = &root;				// Pointer to a pointer to root

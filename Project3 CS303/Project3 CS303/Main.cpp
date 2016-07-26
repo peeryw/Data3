@@ -82,7 +82,7 @@ int main()
 				}
 			}
 		}
-		MorseCode.makeLetter(letter, code);//buiilds tree and populates maps
+		MorseCode.makeTree(letter, code);//buiilds tree and populates maps
 		code = "";//clear code after each iteration
 	}
 	

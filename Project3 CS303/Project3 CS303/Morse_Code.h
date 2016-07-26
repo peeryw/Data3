@@ -48,7 +48,7 @@ public:
 	string getCode(const char & letter); //returns code value of letter
 	string decode(string code); //dot dash to letter
 	string encode(string letter); //letter to dash dot
-	void makeLetter(char letter, string letterDotdash); // also populates maps
+	void makeTree(char letter, string letterDotdash); // also populates maps
 
 private:
 	tree *root;
