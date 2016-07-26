@@ -44,7 +44,7 @@ struct tree {
 class Morse_Code{
 public:
 	Morse_Code();
-	char getLetter(string code); //returns letter value of code
+	string getLetter(string code); //returns letter value of code
 	string getCode(const char & letter); //returns code value of letter
 	string decode(string code); //dot dash to letter
 	string encode(string letter); //letter to dash dot

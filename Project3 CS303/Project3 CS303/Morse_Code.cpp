@@ -14,16 +14,22 @@ Morse_Code::Morse_Code()
 	root->Right = nullptr;
 }
 
-char Morse_Code::getLetter(string code)
+string Morse_Code::getLetter(string code)
 //read in code, search through map to find key(code) and return letter
 {
-	map<string, char>::const_iterator it= dotToAscii.find(code);
-	if (it != dotToAscii.end())
-	{
-		return it->second;
+	tree **currTree = &root;				// Pointer to a pointer to root
+	for (int i=0; i < code.length(); i++){
+		if ((*currTree) == NULL){
+			throw -100;
+		}
+		if (code[i]=='.'){			// dot = Navigate left
+			currTree = &((*currTree)->Left);
+		}
+		else {
+			currTree = &((*currTree)->Right);
+		}
 	}
-	else
-		return NULL;
+	return (*currTree)->letter;
 }
 
 string Morse_Code::getCode(const char& letter)
@@ -45,7 +51,7 @@ string Morse_Code::decode(string code)
 	//send first character to getLetter
 	// returned character will be added to new string
 	//repeat step 3 and 4 untill string is empty
-
+	
 	string decode; // result
 	decode += getLetter(code.substr(0, code.find(" "))); // decode first substring and add to result
 	
@@ -53,7 +59,7 @@ string Morse_Code::decode(string code)
 		code = code.substr(code.find(" ") + 1); // slice decoded substring
 		decode += getLetter(code.substr(0, code.find(" ")));
 	}
-	return string(decode);
+	return decode;
 }
 
 
