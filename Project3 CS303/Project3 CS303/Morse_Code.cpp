@@ -4,7 +4,7 @@ Morse_Code.cpp file
 
 #include "Morse_Code.h"
 
-Morse::Morse()
+Morse_Code::Morse_Code()
 {
 	treeMade = false;
 	root = new tree;
@@ -14,26 +14,22 @@ Morse::Morse()
 	root->Right = nullptr;
 }
 
-Morse::~Morse(){
-	delete root;
-}
-
-string Morse::getLetter(const string& code)
+char Morse_Code::getLetter(string code)
 //read in code, search through map to find key(code) and return letter
 {
-	map<string, string>::const_iterator it= dotToAscii.find(code);
+	map<string, char>::const_iterator it= dotToAscii.find(code);
 	if (it != dotToAscii.end())
 	{
 		return it->second;
 	}
 	else
-		return "";
+		return NULL;
 }
 
-string Morse::getCode(const string& letter)
+string Morse_Code::getCode(const char& letter)
 //read in letter, search through map to find key(letter) and return code
 {
-	map<string, string>::const_iterator it = asciiToDot.find(letter);
+	map<char, string>::const_iterator it = asciiToDot.find(letter);
 	if (it != asciiToDot.end())
 	{
 		return it->second;
@@ -47,7 +43,7 @@ string Morse::getCode(const string& letter)
 //send first character to getLetter
 // returned character will be added to new string
 //repeat step 3 and 4 untill string is empty
-string Morse::decode(string code)
+string Morse_Code::decode(string code)
 {	
 	string decode; // result
 	decode += getLetter(code.substr(0, code.find(" "))); // decode first substring and add to result
@@ -60,7 +56,7 @@ string Morse::decode(string code)
 }
 
 
-string Morse::encode( string  letter)
+string Morse_Code::encode(string  letter)
 {
 	//read in string
 	//step through one character at a time
@@ -71,13 +67,12 @@ string Morse::encode( string  letter)
 	//repeat until string is empty
 	string TempString;
 	string ENCODED;
-	Morse TempCode;
 	for (int i = 0; i < letter.length(); i++)
 	{
-		map<string, string>::const_iterator it = asciiToDot.find(letter[i]);
+		map<char, string>::const_iterator it = asciiToDot.find(tolower(letter[i]));
 		if (it != asciiToDot.end())
 		{
-			 ENCODED += it->second;
+			ENCODED += it->second + " ";
 		}
 		else
 			return "";
@@ -85,7 +80,7 @@ string Morse::encode( string  letter)
 	return string(ENCODED);
 }
 
-void Morse::makeLetter(string tempLetter, string letterDotdash){
+void Morse_Code::makeLetter(char tempLetter, string letterDotdash){
 	asciiToDot[tempLetter] = letterDotdash; // populate maps
 	dotToAscii[letterDotdash] = tempLetter;
 	tree **currTree = &root;				// Pointer to a pointer to root
@@ -99,12 +94,12 @@ void Morse::makeLetter(string tempLetter, string letterDotdash){
 				currTree = &((*currTree)->Left);	// node exists lets go
 			}
 		}
-		if (letterDotdash[i]=='-' || letterDotdash[i]=='_'){ // dash = navigate right
+		else if (letterDotdash[i]=='-' || letterDotdash[i]=='_'){ // dash = navigate right
 			if ((*currTree)->Right == nullptr){
 				(*currTree)->Right = new tree;
 				currTree = &((*currTree)->Right); // go read the comments above
 			}
-		else {
+			else {
 				currTree = &((*currTree)->Right);
 			}
 		}

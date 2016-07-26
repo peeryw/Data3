@@ -48,8 +48,9 @@ int main()
 {
 	ifstream fin;
 	ofstream fout;
-	string letter, code, value, temp;
-	Morse MorseCode;
+	string code, value, temp;
+	char letter;
+	Morse_Code MorseCode;
 
 	// 1. check file exists
 	try
@@ -85,18 +86,9 @@ int main()
 		MorseCode.makeLetter(letter, code);
 		code = "";
 	}
-	
-	//string decoded = MorseCode.getLetter("._");
-	//cout << decoded << endl;
 
-	//string encoded = MorseCode.getCode("a");
-	//cout << encoded << endl;
-
-	string decodedLong = MorseCode.decode("._ _... _._.");
-	cout << decodedLong << endl;
-
-	//string encodedLong = MorseCode.encode("hello");
-	//cout << encodedLong << endl;
+	cout << MorseCode.decode(".... . ._.. .__. .. __ _ ._. ._ .__. .__. . _.. .. _. ._ _._. ___ __ .__. .._ _ . ._.") << endl;
+	cout << MorseCode.encode("hillaryriggedtheprimary") << endl;
 
 	system("pause");
 	return 0;
