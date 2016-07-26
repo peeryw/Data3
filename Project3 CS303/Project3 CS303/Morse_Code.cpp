@@ -70,12 +70,10 @@ string Morse::encode( string  letter)
 	Morse TempCode;
 	for (int i = 0; i < letter.length(); i++)
 	{
-		TempString = letter[i];
-		map<string, string>::const_iterator it = asciiToDot.find(TempString);
+		map<string, string>::const_iterator it = asciiToDot.find(letter[i]);
 		if (it != asciiToDot.end())
 		{
 			 ENCODED += it->second;
-			 ENCODED += " ";
 		}
 		else
 			return "";
