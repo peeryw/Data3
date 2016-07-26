@@ -111,7 +111,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
             endingLineNumber = "30"
-            landmarkName = "Morse::makeLetter(string tempLetter, string letterDotdash)"
+            landmarkName = "Morse::getCode(const string&amp; letter)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -126,9 +126,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "Morse::decode(string dotToAscii)"
-            landmarkType = "5">
+            endingLineNumber = "16">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -143,7 +141,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
             endingLineNumber = "17"
-            landmarkName = "Morse::decode(string dotToAscii)"
+            landmarkName = "Morse::getLetter(const string&amp; code)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -175,7 +173,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
             endingLineNumber = "21"
-            landmarkName = "Morse::decode(string dotToAscii)"
+            landmarkName = "Morse::getLetter(const string&amp; code)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

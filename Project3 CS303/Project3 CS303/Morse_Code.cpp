@@ -14,6 +14,10 @@ Morse::Morse()
 	root->Right = nullptr;
 }
 
+Morse::~Morse(){
+	delete root;
+}
+
 string Morse::getLetter(const string& code)
 //read in code, search through map to find key(code) and return letter
 {

@@ -31,6 +31,7 @@ using namespace std;
 
 struct tree {
 	tree() { Left = nullptr; Right = nullptr; }
+	~tree() { delete Left; delete Right; }
 	string letter;
 	string dotdash;
 	tree *Left, *Right;
@@ -39,6 +40,7 @@ struct tree {
 class Morse {
 public:
 	Morse();
+	~Morse();
 	string getLetter(const string & code); //returns letter value of code
 	string getCode(const string & letter); //returns code value of letter
 	string decode(string code); //dot dash to letter
