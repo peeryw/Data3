@@ -82,11 +82,12 @@ int main()
 				}
 			}
 		}
-		//cout << letter << " " << code << endl;//used to test
-		MorseCode.makeLetter(letter, code);
-		code = "";
+		MorseCode.makeLetter(letter, code);//buiilds tree and populates maps
+		code = "";//clear code after each iteration
 	}
-
+	
+	//currently test strings
+	//change the string to test for different outcomes
 	cout << MorseCode.decode(".... . ._.. .__. .. __ _ ._. ._ .__. .__. . _.. .. _. ._ _._. ___ __ .__. .._ _ . ._.") << endl;
 	cout << MorseCode.encode("hillaryriggedtheprimary") << endl;
 

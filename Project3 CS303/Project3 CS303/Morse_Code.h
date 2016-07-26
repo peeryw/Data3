@@ -4,11 +4,16 @@ The first node is a dummy node and stores no letters.
 The left branch of a root will be dots and the right branch will be dash
 ex:
 
-			dummy
-			/   \
-		 dot    dash
-		 / \     / \
-	  dot dash  dot dash
+								dummy
+								 node
+								/   \
+							  dot   dash
+							  /       \
+						    node      node
+							/  \      /  \
+						  dot dash  dot  dash
+						  /     \    /     \
+					    node   node node  node
 
 after the tree is created, it will be used to decode or encode a message
 it will use a space as a deliminator

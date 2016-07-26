@@ -38,13 +38,14 @@ string Morse_Code::getCode(const char& letter)
 		return "";
 }
 
-//read in string
-//step through string one "character" at a time, the delim will be a space
-//send first character to getLetter
-// returned character will be added to new string
-//repeat step 3 and 4 untill string is empty
 string Morse_Code::decode(string code)
 {	
+	//read in string
+	//step through string one "character" at a time, the delim will be a space
+	//send first character to getLetter
+	// returned character will be added to new string
+	//repeat step 3 and 4 untill string is empty
+
 	string decode; // result
 	decode += getLetter(code.substr(0, code.find(" "))); // decode first substring and add to result
 	
