@@ -45,21 +45,14 @@ string Morse::getCode(const string& letter)
 //repeat step 3 and 4 untill string is empty
 string Morse::decode(string code)
 {	
-	string DECODED;
-	string TempString;
-	Morse TempLetter;
-	TempString = code.substr(0, code.find(" "));
-	while (!TempString.empty()) {
-		map<string, string>::const_iterator it = dotToAscii.find(TempString);
-		if (it != dotToAscii.end())
-		{
-			DECODED += it->second;
-			TempString = (code.substr(code.find(" ")), code.find(" ")+1);
-		}
-		else
-			return string(DECODED);
+	string decode; // result
+	decode += getLetter(code.substr(0, code.find(" "))); // decode first substring and add to result
+	
+	while (code.find(" ") != -1){ // while there are still spaces in the string
+		code = code.substr(code.find(" ") + 1); // slice decoded substring
+		decode += getLetter(code.substr(0, code.find(" ")));
 	}
-	return string(DECODED);
+	return string(decode);
 }
 
 

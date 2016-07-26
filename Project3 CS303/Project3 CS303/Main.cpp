@@ -86,17 +86,17 @@ int main()
 		code = "";
 	}
 	
-	string decoded = MorseCode.getLetter("._");
-	cout << decoded << endl;
+	//string decoded = MorseCode.getLetter("._");
+	//cout << decoded << endl;
 
-	string encoded = MorseCode.getCode("a");
-	cout << encoded << endl;
+	//string encoded = MorseCode.getCode("a");
+	//cout << encoded << endl;
 
-	string decodedLong = MorseCode.decode("._ .___ _._ ___ ...");
+	string decodedLong = MorseCode.decode(".. ._.. ___ ..._ . ._ ._.. . _.._ ._");
 	cout << decodedLong << endl;
 
-	string encodedLong = MorseCode.encode("hello");
-	cout << encodedLong << endl;
+	//string encodedLong = MorseCode.encode("hello");
+	//cout << encodedLong << endl;
 
 	system("pause");
 	return 0;
