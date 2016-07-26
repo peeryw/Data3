@@ -1,25 +1,18 @@
 # Data3
 UMKC CS 303 Project
 
-20160721
+This program will read in a text file and convert it to a binary tree
+of the depth of 4. It is used to translate morse code from letter
+to code and code to letter. It only translates one word at a time.
+It uses maps to make the translation easier. Dots on the tree always
+travers left and dashes (underscores) always travers right.
 
-Morse_Code file additions/deletions
--corrected .hpp ifndef/define
--removed setletter (no longer needed)
--removed setCode (no longer needed)
--removed getline overloaded operator (not needed)
--removed overloaded operator >>
--changed setLetter to decode
--changed setCode to encode
--added comments to decode and encode
+This project was for summer class CS 303 at UMKC.
 
-Main file additions and deletions
--change main from int to void
--cleanded up and removed unused variables
+The group members and contributers are as follows in alphbetical order:
+Joshua Ford
+Jack Goza
+Scott Peery
 
-
-Jack's adventure notes:
-
--Only thing left is encode/decode which is STUPID easy using maps.
--Upon reflection the binary node creation wasn't that hard a problem, and I most likely overcelebrated
--With that said... suck it!
+This code is opensource. If you use it or any part of it, please give
+recognition in your program. Enjoy.
