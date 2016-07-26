@@ -45,23 +45,23 @@ string Morse::getCode(const string& letter)
 //repeat step 3 and 4 untill string is empty
 string Morse::decode(string code)
 {	
+	string DECODED;
 	string TempString;
 	Morse TempLetter;
-	string DECODED;
 	TempString = code.substr(0, code.find(" "));
-	while (!code.empty()) {
+	while (!TempString.empty()) {
 		map<string, string>::const_iterator it = dotToAscii.find(TempString);
 		if (it != dotToAscii.end())
 		{
 			DECODED += it->second;
-			TempString = (code.substr(code.find(" ") + 1));
+			TempString = (code.substr(code.find(" ")), code.find(" ")+1);
 		}
 		else
-			return "";
-
+			return string(DECODED);
 	}
 	return string(DECODED);
 }
+
 
 string Morse::encode( string  letter)
 {
